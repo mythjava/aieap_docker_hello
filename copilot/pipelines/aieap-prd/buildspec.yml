@@ -15,8 +15,8 @@ phases:
   post_build:
     commands:
       - ls -l
-      - ls -lah copilot/pipelines/aieap-prd/
-      - a=%(./copilot-linux app init aieap)
+      - cat copilot/pipelines/aieap-prd/buildspec.yml
+      - a=$(./copilot-linux app init aieap)
       - export COLOR="false"
       - export CI="true"
       - pipeline=$(cat $CODEBUILD_SRC_DIR/copilot/pipelines/aieap-prd/manifest.yml | ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))')
