@@ -6,4 +6,5 @@ echo "Hello, World!<br>";
 echo "client_ip: $client_ip<br>";
 echo "browser: $browser<br>";
 echo "request_uri: $request_uri<br>";
+echo "Current time: " . date("Y-m-d H:i:s");
 ?>
