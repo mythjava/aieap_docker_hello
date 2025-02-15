@@ -15,6 +15,10 @@ phases:
   post_build:
     commands:
       - ls -l
+      - echo "Checking current directory"
+      - pwd
+      - ls -lah
+      - ls -lah copilot/
       - export COLOR="false"
       - export CI="true"
       - pipeline=$(cat $CODEBUILD_SRC_DIR/copilot/pipelines/aieap-prd/manifest.yml | ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load(ARGF))')
