@@ -15,8 +15,8 @@ source:
   provider: GitHub
   # Additional properties that further specify the location of the artifacts.
   properties:
-    branch: prd
-    repository: https://github.com/mythjava/aieap
+    branch: main
+    repository: https://github.com/mythjava/aieap_docker_hello
     # Optional: specify the name of an existing CodeStar Connections connection.
     # connection_name: a-connection
 
@@ -28,4 +28,3 @@ stages:
     # requires_approval: true
     # Optional: use test commands to validate this stage of your build.
     # test_commands: [echo 'running tests', make test]
-
