@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Shanghai');
-$client_ip = $_SERVER['REMOTE_ADDR'];
+$client_ip = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'];
 $browser = $_SERVER['HTTP_USER_AGENT'];
 $request_uri = $_SERVER['REQUEST_URI'];
 $current_time = date('Y-m-d H:i:s');
