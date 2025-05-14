@@ -18,7 +18,7 @@ source:
     branch: prd
     repository: https://github.com/mythjava/aieap_docker_hello
     # Optional: specify the name of an existing CodeStar Connections connection.
-    connection_name: copilot-mythj-aieap_docker_hello
+    # connection_name: copilot-mythj-aieap_docker_hello
 
 # This section defines the order of the environments your pipeline will deploy to.
 stages:
